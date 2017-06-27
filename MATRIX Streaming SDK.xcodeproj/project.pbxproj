@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A8705D1D2A679E0E9C3A722 /* Pods_MATRIX_Streaming_SDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDD84AF96E36A2F1110492C /* Pods_MATRIX_Streaming_SDK_iOS.framework */; };
 		5242241A1F02AB2C00AFE02E /* MatrixStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524224191F02AB2C00AFE02E /* MatrixStreaming.swift */; };
 		5242241B1F02AB2C00AFE02E /* MatrixStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524224191F02AB2C00AFE02E /* MatrixStreaming.swift */; };
 		5242241C1F02AB2C00AFE02E /* MatrixStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524224191F02AB2C00AFE02E /* MatrixStreaming.swift */; };
 		5242241D1F02AB2C00AFE02E /* MatrixStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524224191F02AB2C00AFE02E /* MatrixStreaming.swift */; };
+		65139AC9AED19E7E3BD0EB9D /* Pods_MATRIX_Streaming_SDK_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2303E1B2B10D98C31DDE71 /* Pods_MATRIX_Streaming_SDK_watchOS.framework */; };
+		7C3ABD5355A6AEBF9E00716E /* Pods_MATRIX_Streaming_SDK_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312D6A34F41B2B351B616DBE /* Pods_MATRIX_Streaming_SDK_macOS.framework */; };
+		808E372D00BE342B259998BC /* Pods_MATRIX_Streaming_SDK_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A92DDEB2F7E883F04B9CA0 /* Pods_MATRIX_Streaming_SDK_tvOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E5444690CA0D7E98D0DA9AA /* Pods-MATRIX Streaming SDK macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK macOS/Pods-MATRIX Streaming SDK macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		312D6A34F41B2B351B616DBE /* Pods_MATRIX_Streaming_SDK_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MATRIX_Streaming_SDK_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C70FFC9AD6BB243D493D53 /* Pods-MATRIX Streaming SDK watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK watchOS/Pods-MATRIX Streaming SDK watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		524223D91F02A99400AFE02E /* MatrixStreamingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixStreamingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		524223F41F02AA2A00AFE02E /* MatrixStreamingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixStreamingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		524224011F02AA3300AFE02E /* MatrixStreamingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixStreamingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5242240E1F02AA8E00AFE02E /* MatrixStreamingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixStreamingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		524224171F02AABC00AFE02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		524224191F02AB2C00AFE02E /* MatrixStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixStreaming.swift; sourceTree = "<group>"; };
+		561ABE0D22021066F9931AFD /* Pods-MATRIX Streaming SDK tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK tvOS/Pods-MATRIX Streaming SDK tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6AB2A90229EEAF09C7EFA27D /* Pods-MATRIX Streaming SDK iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK iOS/Pods-MATRIX Streaming SDK iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		73BF855A2CD029A336F3F1CD /* Pods-MATRIX Streaming SDK watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK watchOS/Pods-MATRIX Streaming SDK watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		B8309DAB7D127F431CDBD149 /* Pods-MATRIX Streaming SDK tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK tvOS/Pods-MATRIX Streaming SDK tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		CDDD84AF96E36A2F1110492C /* Pods_MATRIX_Streaming_SDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MATRIX_Streaming_SDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADF685D370A0C40C8F6D7FE /* Pods-MATRIX Streaming SDK iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK iOS/Pods-MATRIX Streaming SDK iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DD2303E1B2B10D98C31DDE71 /* Pods_MATRIX_Streaming_SDK_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MATRIX_Streaming_SDK_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A92DDEB2F7E883F04B9CA0 /* Pods_MATRIX_Streaming_SDK_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MATRIX_Streaming_SDK_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4579F8C4BBB83739251E079 /* Pods-MATRIX Streaming SDK macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK macOS/Pods-MATRIX Streaming SDK macOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3ABD5355A6AEBF9E00716E /* Pods_MATRIX_Streaming_SDK_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65139AC9AED19E7E3BD0EB9D /* Pods_MATRIX_Streaming_SDK_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808E372D00BE342B259998BC /* Pods_MATRIX_Streaming_SDK_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,18 +67,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8705D1D2A679E0E9C3A722 /* Pods_MATRIX_Streaming_SDK_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB8DF2BCBF39DD58A6DC166 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AB2A90229EEAF09C7EFA27D /* Pods-MATRIX Streaming SDK iOS.debug.xcconfig */,
+				DADF685D370A0C40C8F6D7FE /* Pods-MATRIX Streaming SDK iOS.release.xcconfig */,
+				0E5444690CA0D7E98D0DA9AA /* Pods-MATRIX Streaming SDK macOS.debug.xcconfig */,
+				F4579F8C4BBB83739251E079 /* Pods-MATRIX Streaming SDK macOS.release.xcconfig */,
+				561ABE0D22021066F9931AFD /* Pods-MATRIX Streaming SDK tvOS.debug.xcconfig */,
+				B8309DAB7D127F431CDBD149 /* Pods-MATRIX Streaming SDK tvOS.release.xcconfig */,
+				38C70FFC9AD6BB243D493D53 /* Pods-MATRIX Streaming SDK watchOS.debug.xcconfig */,
+				73BF855A2CD029A336F3F1CD /* Pods-MATRIX Streaming SDK watchOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		524223CD1F02A92F00AFE02E = {
 			isa = PBXGroup;
 			children = (
 				524224181F02AAEF00AFE02E /* Sources */,
 				524224161F02AABC00AFE02E /* Resources */,
 				524223DA1F02A99400AFE02E /* Products */,
+				0BB8DF2BCBF39DD58A6DC166 /* Pods */,
+				5F0870738F824A615F514421 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +125,17 @@
 				524224191F02AB2C00AFE02E /* MatrixStreaming.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		5F0870738F824A615F514421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD84AF96E36A2F1110492C /* Pods_MATRIX_Streaming_SDK_iOS.framework */,
+				312D6A34F41B2B351B616DBE /* Pods_MATRIX_Streaming_SDK_macOS.framework */,
+				F0A92DDEB2F7E883F04B9CA0 /* Pods_MATRIX_Streaming_SDK_tvOS.framework */,
+				DD2303E1B2B10D98C31DDE71 /* Pods_MATRIX_Streaming_SDK_watchOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,10 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 524223E11F02A99400AFE02E /* Build configuration list for PBXNativeTarget "MATRIX Streaming SDK macOS" */;
 			buildPhases = (
+				D113EE2BD15D2E4010F2EEA7 /* [CP] Check Pods Manifest.lock */,
 				524223D41F02A99400AFE02E /* Sources */,
 				524223D51F02A99400AFE02E /* Frameworks */,
 				524223D61F02A99400AFE02E /* Headers */,
 				524223D71F02A99400AFE02E /* Resources */,
+				C9F80C784182F8DCC751C35D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,10 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 524223F91F02AA2A00AFE02E /* Build configuration list for PBXNativeTarget "MATRIX Streaming SDK watchOS" */;
 			buildPhases = (
+				A72F7A14BC8F89F11F321CB7 /* [CP] Check Pods Manifest.lock */,
 				524223EF1F02AA2A00AFE02E /* Sources */,
 				524223F01F02AA2A00AFE02E /* Frameworks */,
 				524223F11F02AA2A00AFE02E /* Headers */,
 				524223F21F02AA2A00AFE02E /* Resources */,
+				4A57752637938B5B7F5B37CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,10 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 524224061F02AA3300AFE02E /* Build configuration list for PBXNativeTarget "MATRIX Streaming SDK tvOS" */;
 			buildPhases = (
+				0D2C1FF6043883945C79DD84 /* [CP] Check Pods Manifest.lock */,
 				524223FC1F02AA3300AFE02E /* Sources */,
 				524223FD1F02AA3300AFE02E /* Frameworks */,
 				524223FE1F02AA3300AFE02E /* Headers */,
 				524223FF1F02AA3300AFE02E /* Resources */,
+				E61D1ED2A2D214373A89518C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,10 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 524224131F02AA8F00AFE02E /* Build configuration list for PBXNativeTarget "MATRIX Streaming SDK iOS" */;
 			buildPhases = (
+				9F34BF8E503742B9DD5B5B0F /* [CP] Check Pods Manifest.lock */,
 				524224091F02AA8E00AFE02E /* Sources */,
 				5242240A1F02AA8E00AFE02E /* Frameworks */,
 				5242240B1F02AA8E00AFE02E /* Headers */,
 				5242240C1F02AA8E00AFE02E /* Resources */,
+				5FD2B7408CDA346C34A376B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +334,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D2C1FF6043883945C79DD84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MATRIX Streaming SDK tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A57752637938B5B7F5B37CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MATRIX Streaming SDK watchOS/Pods-MATRIX Streaming SDK watchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FD2B7408CDA346C34A376B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MATRIX Streaming SDK iOS/Pods-MATRIX Streaming SDK iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F34BF8E503742B9DD5B5B0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MATRIX Streaming SDK iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A72F7A14BC8F89F11F321CB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MATRIX Streaming SDK watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9F80C784182F8DCC751C35D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MATRIX Streaming SDK macOS/Pods-MATRIX Streaming SDK macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D113EE2BD15D2E4010F2EEA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MATRIX Streaming SDK macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E61D1ED2A2D214373A89518C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MATRIX Streaming SDK tvOS/Pods-MATRIX Streaming SDK tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		524223D41F02A99400AFE02E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -332,6 +523,7 @@
 		};
 		524223DF1F02A99400AFE02E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5444690CA0D7E98D0DA9AA /* Pods-MATRIX Streaming SDK macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -396,6 +588,7 @@
 		};
 		524223E01F02A99400AFE02E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4579F8C4BBB83739251E079 /* Pods-MATRIX Streaming SDK macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -452,6 +645,7 @@
 		};
 		524223FA1F02AA2A00AFE02E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C70FFC9AD6BB243D493D53 /* Pods-MATRIX Streaming SDK watchOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -516,6 +710,7 @@
 		};
 		524223FB1F02AA2A00AFE02E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73BF855A2CD029A336F3F1CD /* Pods-MATRIX Streaming SDK watchOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -573,6 +768,7 @@
 		};
 		524224071F02AA3300AFE02E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 561ABE0D22021066F9931AFD /* Pods-MATRIX Streaming SDK tvOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -636,6 +832,7 @@
 		};
 		524224081F02AA3300AFE02E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8309DAB7D127F431CDBD149 /* Pods-MATRIX Streaming SDK tvOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -692,6 +889,7 @@
 		};
 		524224141F02AA8F00AFE02E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB2A90229EEAF09C7EFA27D /* Pods-MATRIX Streaming SDK iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -756,6 +954,7 @@
 		};
 		524224151F02AA8F00AFE02E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DADF685D370A0C40C8F6D7FE /* Pods-MATRIX Streaming SDK iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
