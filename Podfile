@@ -1,7 +1,7 @@
 use_frameworks!
 
 def shared_pods
-    pod 'MatrixAuthSDK', :git => 'https://github.com/matrix-io/matrix-auth-swift-sdk.git', :tag => 'v0.1.1'
+    pod 'MatrixAuthSDK', :git => 'https://github.com/matrix-io/matrix-auth-swift-sdk.git', :tag => 'v0.2.0'
 end
 
 target 'MATRIX Streaming SDK macOS' do
