@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
     s.source                    = { :git => "#{s.homepage}.git", :tag => "v#{s.version}" }
     s.source_files              = "Sources/**/*.swift"
     s.dependency "MatrixUtils"
-    s.dependency "Socket.IO-Client-Swift", "~> 10.0.0"
+    s.dependency "Socket.IO-Client-Swift", "~> 11.1.1"
 end
