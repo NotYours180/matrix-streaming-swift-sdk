@@ -1,5 +1,5 @@
 # MATRIX Swift Streaming SDK
-MATRIX Streaming server for Swift
+MATRIX Streaming server framework for Swift
 
 [![Build Status](https://travis-ci.org/matrix-io/matrix-streaming-swift-sdk.svg?branch=master)](https://travis-ci.org/matrix-io/matrix-streaming-swift-sdk)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/MatrixStreamimgSDK.svg)](https://img.shields.io/cocoapods/v/MatrixStreamimgSDK.svg)
