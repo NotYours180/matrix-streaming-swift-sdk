@@ -28,7 +28,7 @@
 import Foundation
 
 /// The environment with which to use the API.
-public enum Environment {
+public enum Environment: String {
 
     /// Production environment.
     case prod

@@ -30,13 +30,13 @@ import SocketIO
 import MatrixUtils
 
 /// MATRIX Streaming socket connection delegate.
-public protocol MXSSConnectionDelegate: class {
+@objc public protocol MXSSConnectionDelegate: class {
 
     /// The MATRIX Streaming connection receive a message.
-    func MXSSConnectionMessage(data: [String:AnyObject])
+    @objc optional func MXSSConnectionMessage(data: [String:AnyObject])
 
     /// The MATRIX Streaming connection receive a aggregation message.
-    func MXSSConnectionAggregation(data: [String:AnyObject])
+    @objc optional func MXSSConnectionAggregation(data: [String:AnyObject])
 
     /// The MATRIX Streaming connection did changed
     func MXSSConnectionConnectionDidChanged(status: Bool)
@@ -170,11 +170,11 @@ extension MXSSConnection: SocketEngineClient {
                     print("register-fail")
                 case "server-message":
                     if let payload = dictionary["payload"] as? [String : AnyObject] {
-                        self.delegate?.MXSSConnectionMessage(data: payload)
+                        self.delegate?.MXSSConnectionMessage?(data: payload)
                     }
                 case "server-aggregation":
                     if let payload = dictionary["payload"] as? [String : AnyObject] {
-                        self.delegate?.MXSSConnectionAggregation(data: payload)
+                        self.delegate?.MXSSConnectionAggregation?(data: payload)
                     }
                 default:
                     print(channelName)
