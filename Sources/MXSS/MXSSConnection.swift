@@ -59,7 +59,6 @@ public final class MXSSConnection {
         }
     }
 
-
     /// The delegate.
     public weak var delegate: MXSSConnectionDelegate? {
         didSet {
@@ -115,6 +114,13 @@ public final class MXSSConnection {
     /// Stops the MATRIX Streaming server connection.
     public func stopConnection() {
         _engine?.disconnect(reason: "Manually Disconnected")
+    }
+
+    /// Send a message to MATRIX Streaming server.
+    public func sendMessage(_ message: Data) {
+        if _engine?.connected == true && _isConnected == true {
+            _engine?.write("", withType: .message, withData: [message])
+        }
     }
 
     /// Register this connection as client on the MATRIX Streaming server.

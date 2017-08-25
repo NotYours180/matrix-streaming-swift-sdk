@@ -15,6 +15,7 @@
 		A7F9082B1F4DEE2100467E8E /* MXSSConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9082A1F4DEE2100467E8E /* MXSSConnection.swift */; };
 		A7F9082D1F4DEE2A00467E8E /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9082C1F4DEE2A00467E8E /* Errors.swift */; };
 		A7F9082F1F4DEF2000467E8E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9082E1F4DEF2000467E8E /* Environment.swift */; };
+		A7F9084C1F5089FE00467E8E /* MatrixStreamingSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A7F9084B1F5089FE00467E8E /* MatrixStreamingSDK.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A7F9082A1F4DEE2100467E8E /* MXSSConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSSConnection.swift; sourceTree = "<group>"; };
 		A7F9082C1F4DEE2A00467E8E /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		A7F9082E1F4DEF2000467E8E /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		A7F9084B1F5089FE00467E8E /* MatrixStreamingSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MatrixStreamingSDK.podspec; sourceTree = "<group>"; };
 		B8309DAB7D127F431CDBD149 /* Pods-MATRIX Streaming SDK tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK tvOS/Pods-MATRIX Streaming SDK tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		CDDD84AF96E36A2F1110492C /* Pods_MATRIX_Streaming_SDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MATRIX_Streaming_SDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADF685D370A0C40C8F6D7FE /* Pods-MATRIX Streaming SDK iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATRIX Streaming SDK iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MATRIX Streaming SDK iOS/Pods-MATRIX Streaming SDK iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		524223CD1F02A92F00AFE02E = {
 			isa = PBXGroup;
 			children = (
+				A7F9084B1F5089FE00467E8E /* MatrixStreamingSDK.podspec */,
 				524224181F02AAEF00AFE02E /* Sources */,
 				524224161F02AABC00AFE02E /* Resources */,
 				524223DA1F02A99400AFE02E /* Products */,
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F9084C1F5089FE00467E8E /* MatrixStreamingSDK.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
