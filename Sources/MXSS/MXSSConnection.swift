@@ -71,14 +71,14 @@ public final class MXSSConnection {
     fileprivate var _engine: SocketEngine?
 
 
-    /// Creates an instance for a given environment, user ID, and user token.
+    /// Creates an instance for a given environment, user ID, user token and debug.
     ///
     /// - throws: `MatrixAuth.Error` if the ID or token are invalid (e.g. empty).
     public convenience init(env: Environment = .prod, userId: String, userToken: String, debug: Bool = false) throws {
         try self.init(baseURL: env.MXSSURL.absoluteString, userId: userId, userToken: userToken, debug: debug)
     }
 
-    /// Creates an instance with a base URL, user ID, and user token.
+    /// Creates an instance with a base URL, user ID, user token and debug.
     ///
     /// - throws: `MXSSConnection.Error` if any parameter is invalid (e.g. empty)
     public init(baseURL: String, userId: String, userToken: String, debug: Bool = false) throws {
@@ -173,8 +173,9 @@ extension MXSSConnection: SocketEngineClient {
 
     public func parseEngineMessage(_ message: String) {
         if let dictionary = message.getDictionary() {
-            if let channelName = dictionary["channel"] as? String {
-                switch MXSSChannel(rawValue: channelName)! {
+            if let channelName = dictionary["channel"] as? String,
+                let channel = MXSSChannel(rawValue: channelName) {
+                switch channel {
                 case .registerOk:
                     self._isConnected = true
                     if _debug == true {
