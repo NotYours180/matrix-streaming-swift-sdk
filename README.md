@@ -19,13 +19,50 @@ MATRIX Streaming server framework for Swift
 To integrate MATRIX Streaming SDK into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-    pod 'MatrixStreamimgSDK'
+$ pod 'MatrixStreamimgSDK'
 ```
 
 Then, run the following command:
 
 ```bash
 $ pod install
+```
+## Usage
+
+The starting point is `MXSSConnection`. With it you can:
+- Connect to MATRIX Straming Server.
+- Authenticate an existing user and work with it.
+- Receive messages from a MATRIX device.
+- Send events to a MATRIX device.
+
+### Connect to MATRIX Streaming Server
+
+```swift
+let mxssConnection = try MXSSConnection(env: ..., userId: ..., userToken: ..., debug: ...)
+mxssConnection?.delegate = self
+mxssConnection?.startConnection()
+```
+
+### Start an app
+
+```swift
+let message = ["channel": MXSSEvent.clientCommand,
+               "payload": ["t": MXSSCommand.appStart,
+                           "deviceId": ...,
+                           "p": ["name": /*appName*/,
+                                 "token": /*userToken*/]]] as [String : Any]
+mxssConnection.sendMessage(message)
+```
+
+### Stop an app
+
+```swift
+let message = ["channel": MXSSEvent.clientCommand,
+               "payload": ["t": MXSSCommand.appStop,
+                           "deviceId": ...,
+                           "p": ["name": /*appName*/,
+                                 "token": /*userToken*/]]] as [String : Any]
+mxssConnection.sendMessage(message)
 ```
 
 ## License
