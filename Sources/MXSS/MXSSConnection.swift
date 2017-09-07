@@ -162,17 +162,17 @@ extension MXSSConnection: SocketEngineClient {
         if let dictionary = message.getDictionary() {
             if let channelName = dictionary["channel"] as? String {
                 switch channelName {
-                case "register-ok":
+                case MXSSChannel.registerOk:
                     self._isConnected = true
                     print("register-ok")
-                case "register-fail":
+                case MXSSChannel.registerFail:
                     stopConnection()
                     print("register-fail")
-                case "server-message":
+                case MXSSChannel.serverMessage:
                     if let payload = dictionary["payload"] as? [String : AnyObject] {
                         self.delegate?.MXSSConnectionMessage?(data: payload)
                     }
-                case "server-aggregation":
+                case MXSSChannel.serverAggregation:
                     if let payload = dictionary["payload"] as? [String : AnyObject] {
                         self.delegate?.MXSSConnectionAggregation?(data: payload)
                     }
