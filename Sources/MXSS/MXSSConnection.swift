@@ -53,6 +53,8 @@ public final class MXSSConnection {
 
     internal var _waitingReconnection: Bool
 
+    fileprivate var _debug:Bool = false
+
     fileprivate var _isConnected: Bool {
         didSet {
             self.delegate?.MXSSConnectionConnectionDidChanged(status: _isConnected)
@@ -72,14 +74,14 @@ public final class MXSSConnection {
     /// Creates an instance for a given environment, user ID, and user token.
     ///
     /// - throws: `MatrixAuth.Error` if the ID or token are invalid (e.g. empty).
-    public convenience init(env: Environment = .prod, userId: String, userToken: String) throws {
-        try self.init(baseURL: env.MXSSURL.absoluteString, userId: userId, userToken: userToken)
+    public convenience init(env: Environment = .prod, userId: String, userToken: String, debug: Bool = false) throws {
+        try self.init(baseURL: env.MXSSURL.absoluteString, userId: userId, userToken: userToken, debug: debug)
     }
 
     /// Creates an instance with a base URL, user ID, and user token.
     ///
     /// - throws: `MXSSConnection.Error` if any parameter is invalid (e.g. empty)
-    public init(baseURL: String, userId: String, userToken: String) throws {
+    public init(baseURL: String, userId: String, userToken: String, debug: Bool = false) throws {
         guard !baseURL.isEmpty else {
             throw Error.invalidBaseURL
         }
@@ -89,6 +91,7 @@ public final class MXSSConnection {
         guard !userToken.isEmpty else {
             throw Error.invalidUserToken
         }
+        _debug = debug
         _baseURL = URL(string: baseURL)!
         _userId = userId
         _userToken = userToken
@@ -117,9 +120,11 @@ public final class MXSSConnection {
     }
 
     /// Send a message to MATRIX Streaming server.
-    public func sendMessage(_ message: Data) {
+    public func sendMessage(_ message: [String:Any]) {
         if _engine?.connected == true && _isConnected == true {
-            _engine?.write("", withType: .message, withData: [message])
+            if let data = message.data {
+                _engine?.write("", withType: .message, withData: [data])
+            }
         }
     }
 
@@ -129,7 +134,9 @@ public final class MXSSConnection {
                        "payload": ["userId": _userId, "userToken": _userToken]] as Dictionary
         if let jsonData = message.data {
             _engine?.write("", withType: .message, withData: [jsonData])
-            print("write \(MXSSEvent.clientRegister.rawValue)")
+            if _debug == true {
+                print("write \(MXSSEvent.clientRegister.rawValue)")
+            }
         }
     }
 }
@@ -140,6 +147,9 @@ extension MXSSConnection: SocketEngineClient {
     public func engineDidError(reason: String) { }
 
     public func engineDidClose(reason: String) {
+        if _debug == true {
+            print("socket close reason: \(reason)")
+        }
         self._isConnected = false
         if reason == "Manually Disconnected" {
             self._engine = nil
@@ -155,29 +165,40 @@ extension MXSSConnection: SocketEngineClient {
     }
 
     public func engineDidOpen(reason: String) {
+        if _debug == true {
+            print("socket \(_engine?.sid ?? "") open reason: \(reason)")
+        }
         self.registerClient()
     }
 
     public func parseEngineMessage(_ message: String) {
         if let dictionary = message.getDictionary() {
             if let channelName = dictionary["channel"] as? String {
-                switch channelName {
-                case MXSSChannel.registerOk:
+                switch MXSSChannel(rawValue: channelName)! {
+                case .registerOk:
                     self._isConnected = true
-                    print("register-ok")
-                case MXSSChannel.registerFail:
+                    if _debug == true {
+                        print("MATRIX Streaming Server register ok")
+                    }
+                case .registerFail:
                     stopConnection()
-                    print("register-fail")
-                case MXSSChannel.serverMessage:
+                    if _debug == true {
+                        print("MATRIX Streaming Server register fail")
+                    }
+                case .serverMessage:
                     if let payload = dictionary["payload"] as? [String : AnyObject] {
                         self.delegate?.MXSSConnectionMessage?(data: payload)
                     }
-                case MXSSChannel.serverAggregation:
+                    if _debug == true {
+                        print("MATRIX Streaming Server message")
+                    }
+                case .serverAggregation:
                     if let payload = dictionary["payload"] as? [String : AnyObject] {
                         self.delegate?.MXSSConnectionAggregation?(data: payload)
                     }
-                default:
-                    print(channelName)
+                    if _debug == true {
+                        print("MATRIX Sreaming Server message aggregation")
+                    }
                 }
             }
         }
