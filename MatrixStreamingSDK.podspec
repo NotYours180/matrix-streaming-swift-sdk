@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                      = "MatrixStreamingSDK"
-    s.version                   = "1.0.2"
+    s.version                   = "1.0.3"
     s.summary                   = "MATRIX Streaming SDK for Swift."
     s.homepage                  = "https://github.com/matrix-io/matrix-streaming-swift-sdk"
     s.license                   = { :type => "MIT", :file => "LICENSE.md" }
