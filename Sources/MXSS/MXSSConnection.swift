@@ -138,6 +138,11 @@ public final class MXSSConnection {
                 print("write \(MXSSEvent.clientRegister.rawValue)")
             }
         }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+            if self._isConnected == false {
+                self._engine?.disconnect(reason: "Restart")
+            }
+        })
     }
 }
 
