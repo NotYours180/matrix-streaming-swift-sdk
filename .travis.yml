@@ -10,6 +10,7 @@ before_install:
   - rvm install ruby-2.2.2
   - gem install cocoapods
   - gem install xcpretty -N
+  - pod repo update && pod install
 script:
   - xcodebuild -version
   - xcodebuild -project "MATRIX Streaming SDK.xcodeproj" -scheme "MATRIX Streaming SDK iOS" -destination "generic/platform=iOS" -configuration "release" ONLY_ACTIVE_ARCH=NO build | xcpretty
