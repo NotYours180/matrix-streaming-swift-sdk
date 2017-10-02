@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                      = "MatrixStreamingSDK"
-    s.version                   = "1.0.3"
+    s.version                   = "2.0.0"
     s.summary                   = "MATRIX Streaming SDK for Swift."
     s.homepage                  = "https://github.com/matrix-io/matrix-streaming-swift-sdk"
     s.license                   = { :type => "MIT", :file => "LICENSE.md" }
@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
     s.source                    = { :git => "#{s.homepage}.git", :tag => "v#{s.version}" }
     s.source_files              = "Sources/**/*.swift"
     s.dependency "MatrixUtils"
-    s.dependency "Socket.IO-Client-Swift", "~> 11.1.1"
+    s.dependency "Socket.IO-Client-Swift", "~> 12.1.0"
 end

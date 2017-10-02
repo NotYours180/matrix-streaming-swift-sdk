@@ -57,14 +57,18 @@ public final class MXSSConnection {
 
     fileprivate var _isConnected: Bool {
         didSet {
-            self.delegate?.MXSSConnectionConnectionDidChanged(status: _isConnected)
+            DispatchQueue.main.async {
+                self.delegate?.MXSSConnectionConnectionDidChanged(status: self._isConnected)
+            }
         }
     }
 
     /// The delegate.
     public weak var delegate: MXSSConnectionDelegate? {
         didSet {
-            self.delegate?.MXSSConnectionConnectionDidChanged(status: _isConnected)
+            DispatchQueue.main.async {
+                self.delegate?.MXSSConnectionConnectionDidChanged(status: self._isConnected)
+            }
         }
     }
 
